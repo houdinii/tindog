@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css">
-
-        <title>TinDog</title>
-    </head>
-    <body>
-        <script src="/index.js" type="module"></script>
-    </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <title>TinDog</title>
+</head>
+<body>
+    <header>
+        <div class="container header-icons">
+            <img src="images/icon-profile.png" alt="Profile icon" class="header-icon btn">
+            <img src="images/logo.png" alt="TinDog Logo" class="header-icon logo btn">
+            <img src="images/icon-chat.png" alt="Chat icon" class="header-icon btn">
+        </div>
+    </header>
+    <main>
+        <div class="container main-content">
+            <div class="container profile-section">
+                <img src="images/badge-like.png" alt="Like Badge" class="badge hidden" />
+                <p class="user-details user-heading">Teddy, 30</p>
+                <p class="user-details user-subheading">How you doin?</p>
+            </div>
+            <div class="swipe-btns">
+                <img src="images/icon-cross.png" alt="Nope button" class="swipe-btn nope-btn btn">
+                <img src="images/icon-heart.png" alt="Like button" class="swipe-btn like-btn btn">
+            </div>
+        </div>
+    </main>
+    <script src="/index.js" type="module"></script>
+</body>
 </html>
