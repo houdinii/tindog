@@ -62,7 +62,7 @@ h1, h2, h3, p {
 }
 
 .header-icon{
-  height: 35px;
+  height: 2rem;
   margin: 24px 18px;
 }
 
@@ -75,13 +75,15 @@ h1, h2, h3, p {
   align-items: center;
   height: 100%;
 }
-
+header{
+  height: 10vh;
+}
 .profile-section{
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  height: 751px;
+  height: 74vh;
   width: 96%;
   background-image: url("../images/dog-teddy.jpg");
   border-radius: $profile-img-border-radius;
@@ -109,7 +111,8 @@ h1, h2, h3, p {
   flex-direction: row;
   justify-content: center;
   gap: 24px;
-  margin: 1.5em 0;
+  margin: 1.5em 0 0 0;
+
 }
 .btn{
   cursor: pointer;
@@ -126,7 +129,7 @@ h1, h2, h3, p {
 .swipe-btn{
   background-color: $swipe-btn-bg;
   border-radius: 50%;
-  padding: 1.5em;
+  padding: 3vh;
   filter: $swipe-btn-shadow;
 }
 .nope-btn:hover{
