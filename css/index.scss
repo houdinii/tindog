@@ -1,5 +1,6 @@
 //region Variables
 
+// Typography
 $font: "Poppins", sans-serif;
 
 $font-weight-reg: 400;
@@ -15,14 +16,16 @@ $font-line-height-heavy: 36px;
 
 // Colors
 $grey-btn-fg: #D9DEE6;
-$red-btn-bg: linear-gradient(180deg, #FA695A 100%, #F83375 100%);
-$swipe-btn-shadow: drop-shadow(0px 10px 20px #E9E9EA);
-$logo-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 $profile-img-border-radius: 15px;
-$body-bg: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
 $swipe-btn-bg: #FFFFFF;
 $like-btn-hover: #DBFFF4;
 $nope-btn-hover: #FFE7EF;
+$body-bg: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+$red-btn-bg: linear-gradient(180deg, #FA695A 100%, #F83375 100%);
+$swipe-btn-shadow: drop-shadow(0px 10px 20px #E9E9EA);
+$logo-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+// Transforms
 $badge-rotation: rotate(-30deg);
 
 // endregion
@@ -46,7 +49,13 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+header{
+  height: 10vh;
+}
+
 // endregion
+
+// region Layout
 
 .container{
   display: flex;
@@ -57,6 +66,12 @@ h1, h2, h3, p {
   max-width: 550px;
 }
 
+.main-content{
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
 .header-icons {
   justify-content: space-between;
 }
@@ -64,20 +79,6 @@ h1, h2, h3, p {
 .header-icon{
   height: 2rem;
   margin: 24px 18px;
-}
-
-.logo{
-  filter: $logo-shadow;
-}
-
-.main-content{
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-header{
-  height: 10vh;
 }
 
 .profile-section{
@@ -90,6 +91,21 @@ header{
   background-image: url("../images/dog-teddy.jpg");
   border-radius: $profile-img-border-radius;
 }
+
+.user-detail-section{
+  position: relative;
+  transition: all .15s ease-out;
+  top: 17%;
+  z-index: -15;
+  border-radius: 0 0 $profile-img-border-radius $profile-img-border-radius;
+  padding-top: 1em;
+  width: 100%;
+  background-color: rgba(0,0,0,.4)
+}
+
+// endregion
+
+// region Typography
 
 .user-heading{
   font-weight: $font-weight-heavy;
@@ -107,6 +123,10 @@ header{
   margin-bottom: 1rem;
 }
 
+// endregion
+
+// region Buttons
+
 .swipe-btns{
   display: flex;
   flex-direction: row;
@@ -119,19 +139,15 @@ header{
   cursor: pointer;
 }
 
-.hidden{
-  display: none;
-}
-
-.header-icon:hover{
-  transform: scale(1.2);
-}
-
 .swipe-btn{
   background-color: $swipe-btn-bg;
   border-radius: 50%;
   padding: 3vh;
   filter: $swipe-btn-shadow;
+}
+
+.header-icon:hover{
+  transform: scale(1.2);
 }
 
 .nope-btn:hover{
@@ -140,6 +156,14 @@ header{
 
 .like-btn:hover{
   background-color: $like-btn-hover;
+}
+
+// endregion
+
+//region Miscellaneous
+
+.hidden{
+  display: none;
 }
 
 .badge{
@@ -152,13 +176,9 @@ header{
   top: 0;
   z-index: 2;
 }
-.user-detail-section{
-  position: relative;
-  transition: all .15s ease-out;
-  top: 17%;
-  z-index: -15;
-  border-radius: 0 0 $profile-img-border-radius $profile-img-border-radius;
-  padding-top: 1em;
-  width: 100%;
-  background-color: rgba(0,0,0,.4)
+
+.logo{
+  filter: $logo-shadow;
 }
+
+// endregion

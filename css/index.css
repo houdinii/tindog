@@ -16,6 +16,10 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+header {
+  height: 10vh;
+}
+
 .container {
   display: flex;
   padding: 0;
@@ -23,6 +27,12 @@ h1, h2, h3, p {
   color: #e0e0e0;
   background-size: cover;
   max-width: 550px;
+}
+
+.main-content {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .header-icons {
@@ -34,20 +44,6 @@ h1, h2, h3, p {
   margin: 24px 18px;
 }
 
-.logo {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.main-content {
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-header {
-  height: 10vh;
-}
-
 .profile-section {
   display: flex;
   flex-direction: column;
@@ -57,6 +53,17 @@ header {
   width: 96%;
   background-image: url("../images/dog-teddy.jpg");
   border-radius: 15px;
+}
+
+.user-detail-section {
+  position: relative;
+  transition: all 0.15s ease-out;
+  top: 17%;
+  z-index: -15;
+  border-radius: 0 0 15px 15px;
+  padding-top: 1em;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .user-heading {
@@ -87,19 +94,15 @@ header {
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
-}
-
-.header-icon:hover {
-  transform: scale(1.2);
-}
-
 .swipe-btn {
   background-color: #FFFFFF;
   border-radius: 50%;
   padding: 3vh;
   filter: drop-shadow(0px 10px 20px #E9E9EA);
+}
+
+.header-icon:hover {
+  transform: scale(1.2);
 }
 
 .nope-btn:hover {
@@ -108,6 +111,10 @@ header {
 
 .like-btn:hover {
   background-color: #DBFFF4;
+}
+
+.hidden {
+  display: none;
 }
 
 .badge {
@@ -121,15 +128,8 @@ header {
   z-index: 2;
 }
 
-.user-detail-section {
-  position: relative;
-  transition: all 0.15s ease-out;
-  top: 17%;
-  z-index: -15;
-  border-radius: 0 0 15px 15px;
-  padding-top: 1em;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+.logo {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*# sourceMappingURL=index.css.map */
