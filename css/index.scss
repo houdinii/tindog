@@ -147,7 +147,7 @@ header{
   max-width: 234px;
   transform: $badge-rotation;
 }
-.profile-section:focus > .user-detail-section,
+
 .profile-section:hover > .user-detail-section{
   top: 0;
   z-index: 2;
