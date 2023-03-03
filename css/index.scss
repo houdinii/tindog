@@ -3,7 +3,7 @@
 $font: "Poppins", sans-serif;
 
 $font-weight-reg: 400;
-$font-color-reg: #B7B7B7;
+$font-color-reg: #e0e0e0;
 $font-size-reg: 24px;
 $font-line-height-reg: 32px;
 
@@ -75,9 +75,11 @@ h1, h2, h3, p {
   align-items: center;
   height: 100%;
 }
+
 header{
   height: 10vh;
 }
+
 .profile-section{
   display: flex;
   flex-direction: column;
@@ -88,8 +90,7 @@ header{
   background-image: url("../images/dog-teddy.jpg");
   border-radius: $profile-img-border-radius;
 }
-.user-details{
-}
+
 .user-heading{
   font-weight: $font-weight-heavy;
   font-size: $font-size-heavy;
@@ -112,8 +113,8 @@ header{
   justify-content: center;
   gap: 24px;
   margin: 1.5em 0 0 0;
-
 }
+
 .btn{
   cursor: pointer;
 }
@@ -132,14 +133,23 @@ header{
   padding: 3vh;
   filter: $swipe-btn-shadow;
 }
+
 .nope-btn:hover{
   background-color: $nope-btn-hover;
 }
+
 .like-btn:hover{
   background-color: $like-btn-hover;
 }
+
 .badge{
   margin: 3rem auto auto 1rem;
-  max-width:234px;
+  max-width: 234px;
   transform: $badge-rotation;
+}
+.user-detail-section{
+  border-radius: 0 0 $profile-img-border-radius $profile-img-border-radius;
+  padding-top: 1em;
+  width: 100%;
+  background-color: rgba(0,0,0,.4)
 }

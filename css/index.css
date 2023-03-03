@@ -20,7 +20,7 @@ h1, h2, h3, p {
   display: flex;
   padding: 0;
   margin: 0 auto;
-  color: #B7B7B7;
+  color: #e0e0e0;
   background-size: cover;
   max-width: 550px;
 }
@@ -70,7 +70,7 @@ header {
 .user-subheading {
   font-weight: 400;
   font-size: 24px;
-  color: #B7B7B7;
+  color: #e0e0e0;
   margin-left: 0.75rem;
   margin-bottom: 1rem;
 }
@@ -114,6 +114,13 @@ header {
   margin: 3rem auto auto 1rem;
   max-width: 234px;
   transform: rotate(-30deg);
+}
+
+.user-detail-section {
+  border-radius: 0 0 15px 15px;
+  padding-top: 1em;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*# sourceMappingURL=index.css.map */
