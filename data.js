@@ -1,6 +1,6 @@
 const data = [
     {
-        name: "Barkleyd",
+        name: "Barkley",
         avatar: "images/dog-barkley.png",
         age: 18,
         bio: "Single by choice, just not my choice.",

@@ -147,7 +147,16 @@ header{
   max-width: 234px;
   transform: $badge-rotation;
 }
+.profile-section:focus > .user-detail-section,
+.profile-section:hover > .user-detail-section{
+  top: 0;
+  z-index: 2;
+}
 .user-detail-section{
+  position: relative;
+  transition: all .15s ease-out;
+  top: 17%;
+  z-index: -15;
   border-radius: 0 0 $profile-img-border-radius $profile-img-border-radius;
   padding-top: 1em;
   width: 100%;

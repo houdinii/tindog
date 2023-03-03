@@ -116,7 +116,17 @@ header {
   transform: rotate(-30deg);
 }
 
+.profile-section:focus > .user-detail-section,
+.profile-section:hover > .user-detail-section {
+  top: 0;
+  z-index: 2;
+}
+
 .user-detail-section {
+  position: relative;
+  transition: all 0.15s ease-out;
+  top: 17%;
+  z-index: -15;
   border-radius: 0 0 15px 15px;
   padding-top: 1em;
   width: 100%;
