@@ -38,22 +38,6 @@ const data = [
         bio: "If we meet offline and you look nothing like your pictures, you're buying me drinks until you do.",
         hasBeenSwiped: false,
         hasBeenLiked: false
-    },
-    {
-        name: "Bella",
-        avatar: "images/dog-bella.jpg",
-        age: 43,
-        bio: "Yup, that's my owner. U can meet him if you want",
-        hasBeenSwiped: false,
-        hasBeenLiked: false
-    },
-    {
-        name: "Teddy",
-        avatar: "images/dog-teddy.jpg",
-        age: 30,
-        bio: "How you doin?",
-        hasBeenSwiped: false,
-        hasBeenLiked: false
     }
 ]
 
